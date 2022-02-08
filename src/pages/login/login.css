@@ -1,0 +1,79 @@
+
+.login-info h2 {
+    font-weight: 800;
+    padding-bottom: 5px;
+    font-size: 2.5em;
+}
+
+.login-info h6{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.login-info input {
+  height: 40px;
+  width: 25%;
+  border: none;
+  border: solid 1px rgb(102, 99, 99);
+  border-radius: 3px;
+}
+.login-info input[type="password"] {
+  margin-bottom: 20px;
+}
+
+.login-info button {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.4em 2em;
+  border: 3px solid #141414;
+  border-radius: 2px;
+  position: relative;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #141414;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+
+.login-info button::before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #141414;
+  z-index: -1;
+}
+
+.login-info button:hover,
+.login-info button:focus {
+  color: white;
+}
+
+.login-info button:hover:before,
+.login-info button:focus:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.login-info button:active {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
